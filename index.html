@@ -1,151 +1,177 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Paulo Lins</title>
-        <meta charset='utf-8'>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-        <style>
-            
-            body{
-               
-                margin: 0 auto;
-                padding: 0 2%;
-                font-family: 'Open Sans Condensed', sans-serif;
-                
-            }
 
-            #menu ul{ 
-                margin: 0 auto;
-                height: 30px;
-                position: center;            
-                width: 100%;
-
-                background-color: rgb(0,0,0);
-                list-style: none;
-            }
-
-            #menu ul li{
-                margin: 10px;
-                
-                
-                display: inline;
-            }
-            
-            #menu ul li:hover{ background: rgb(89, 89, 89); }
-
-            #menu ul li a{
-                margin: 0 auto;                
-           
-                color: rgb(255,255,255);
-                text-decoration: none;
-            }
-            #text-box {
-                        margin: 0 left;
-                        background-color: rgb(182, 182, 182);
-                        width: 30%;
-                        padding: 20px;
-                        text-align: left: ;;
-                
-            }
-            #foto-paulo {
-                        margin: 0 left;
-                        
-                        width: 30%;
-                        padding: 15px;
-                        
-                
-            }
-
-
+<head>
+    <title>Paulo Lins</title>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        /*  pesquisar */
         
-        </style>
+        #fonte {
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
         
-    </head>
-            <div>
-               
-            
-                <div id = "menu">
-                    <ul>
-                        <li><a href = "#paulo">Sobre mim</a></li>
-                        <li><a href = "#formacao">Formação</a></li>
-                        <li><a href = "#trabalho">Trabalhos</a></li>
-                        <li><a href = "#habilidades">Habilidades e competências</a></li>
-                        
-                    </ul>
-                
-                  
-                <div id="foto-paulo"><a id="paulo"><img src="images/paulo.png" alt="foto de Paulo Lins" width='300px'></a></div>
-                <div id="text-box"><h2 id="paulo" >Portfólio Web - Paulo Lins</h2>
-                <h3>Um pouco mais sobre mim</h3>
-                <p>
-                    Sou brasileiro, nasci e moro em Fortaleza no estado do Ceará.
-                    Adoro tecnologia e acredito que ela pode nos levar à resolução
-                    de diversos problemas. Propiciando uma vida mais tranquila e o desenvolvimento sustentável.
-                </p>
-                </div>
-                             
-               <br>
-                    <div id="text-box"><h2>Formação</h2>
-                    
-                    Me formei em Arquitetura, fiz pós-graduação em Educação.
-                    Fui professor universitário por quase 7 anos.Neste período fiz parte
-                    do grupo de pesquisa em multimídia e da equipe de professores que<
-                    implementou o Nead (Núcleo de Educação à Distância) da Universidade de Fortaleza.
-                </p>
-                </div>
-                
-                <br>
-                
+        #menu {
+            position: fixed;
+            margin-top: 0;
+            width: 100%;
+            height: 40px;
+            background-color: black;
+        }
+        
+        #menu>ul {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+        
+        #menu>ul>li {
+            display: inline;
+            padding: 20px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            /* font-size: 24px; */
+            font-weight: bold;
+        }
+        
+        #menu>ul>li:hover {
+            background-color: rgb(97, 97, 97);
+        }
+        
+        #menu>ul>li>a {
+            margin: 0 auto;
+            color: rgb(182, 182, 182);
+            text-decoration: none;
+        }
+        
+        #foto-perfil {
+            width: 300px;
+            position: float;
+            margin-top: 70px;
+            margin-left: 30%;
+        }
+        
+        #titulo {
+            position: float;
+            margin-left: 51%;
+            margin-top: -295px;
+            background-color: rgb(190, 190, 190);
+            width: 250px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        #formacao {
+            position: float;
+            margin-left: 30%;
+            background-color: rgb(190, 190, 190);
+            width: 650px;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+        
+        #trabalho {
+            position: float;
+            margin-left: 30%;
+            background-color: rgb(190, 190, 190);
+            width: 650px;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
 
-                <!--<img src="images/unifor.jpg" alt="foto da Universidade de Fortaleza" width='300px'>-->
-                
-                <div id="text-box"><p>
-                    <h2 id="trabalho">Trabalhos</h2>
-                    Na <a href="https://www.unifor.br/" target="_blank">Universidade de Fortaleza</a> contribuí como professor e pesquisador de 2000 a 2006.<br> 
-                    Lá pude contar com a generosidade de outros professores com os quais aprendi muito.
-                
-               
-                <!--<img src="images/dojo.jpg" alt="foto da Universidade do Linsei Dojo em Fortaleza" width='300px'>-->
-                  
-                    Sou professor de <strong><a href="http://www.linseidojo.com.br" target="_blank">aikido</a></strong> e, há 20 anos, ministro aulas no Linsei Dojô em Fortaleza.
-                </p></div>
-                
-               <!-- <img src="images/trybe.png" alt="logo da trybe" width='200px'>-->
+        .link {
+            text-decoration: none; 
+            color:rgb(53, 109, 83);
+            font-weight: bold;
+        }
 
-               <br>    
-                <div id="text-box"><p>    
-                    Atualmente sou estudante da <strong> <a href="https://www.betrybe.com/" target="_blank">trybe.</a></strong><br>
-                    Empresa que busca a excelência na formação 
-                    de desenvolvedores de software.
-               
-                    Além de trabalhar na Universidade pude desenvolver diversos trabalhos nas áreas de:
-                    Computação gráfica                    
-                    Edição de vídeo 
-                    Multimídia
-                    Criação de Identidade Visual para empresas
+        .link-trybe {
+            text-decoration: none; 
+            color:rgb(255, 255, 255);
+            font-weight: bold;
+        }
 
-                    
-                </p></div>
-                <br>
-                <div id="text-box">
-                <p id="habilidades">
-                    <h2>Habilidades e competências</h2>
-                        - Trabalho em equipe<br>
-                        - Photoshop<br>
-                        - Premiere<br>
-                        - After Effects<br>
-                        - Illustrator<br>
-                        - Fotografia<br>
-                        - Produção gráfica<br>
-                        - Atualmente estou desenvolvendo habilidades e competências<br>
-                          relacionadas ao desenvolvimento de software na TRYBE.
 
-                          De todas as habilidades e competências listadas acima,<br>
-                           a que mais me orgulho é a capacidade de trabalhar em equipe.
+        #trybe {
+            position: float;
+            margin-left: 30%;
+            background-color: rgb(53, 109, 83);
+            width: 650px;
+            padding: 20px;
+            margin-top: 50px;
+            color: white;
+            border-radius: 5px;
+        }
 
-                    </p></div>
+        #habilidades {
+            position: float;
+            margin-left: 30%;
+            background-color: rgb(190, 190, 190);
+            width: 650px;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
 
-                
-            </body>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="#titulo">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#trabalho">Trabalhos</a></li>
+            <li><a href="#habilidades">Habilidades e competências</a></li>
+        </ul>
+    </nav>
+    <img id="foto-perfil" src="images/paulo.png" alt="foto de Paulo Lins" />
+    <div id="titulo">
+        <h2>Portfólio Web - Paulo Lins</h2>
+        <h3>Um pouco mais sobre mim</h3>
+        <p>
+            Sou brasileiro, nasci e moro em Fortaleza no estado do Ceará. Adoro tecnologia e acredito que ela pode nos levar à resolução de diversos problemas. Propiciando uma vida mais tranquila e o desenvolvimento sustentável.
+        </p>
+    </div>
+    <br>
+    <div id="formacao">
+        <h2>Formação</h2>
+        <p>
+            Me formei em Arquitetura, fiz pós-graduação em Educação. Fui professor universitário por quase 7 anos.Neste período fiz parte do grupo de pesquisa em multimídia e da equipe de professores que implementou o Nead (Núcleo de Educação à Distância) da Universidade
+            de Fortaleza.
+        </p>
+    </div>
+    <br>
+    <!--<img src="images/unifor.jpg" alt="foto da Universidade de Fortaleza" width='300px'>-->
+    <div id="trabalho">
+        <h2>Trabalhos</h2>
+        <p>Na <a class="link" href="https://www.unifor.br/" target="_blank">Universidade de Fortaleza</a> contribuí como professor e pesquisador de 2000 a 2006.<br> Lá pude contar com a generosidade de outros professores com os quais aprendi muito.
+            <!--<img src="images/dojo.jpg" alt="foto da Universidade do Linsei Dojo em Fortaleza" width='300px'>-->
+            Sou professor de <strong><a class="link" href="http://www.linseidojo.com.br" target="_blank">aikido</a></strong> e, há 20 anos, ministro aulas no Linsei Dojô em Fortaleza.
+        </p>
+    </div>
+    <!-- <img src="images/trybe.png" alt="logo da trybe" width='200px'>-->
+    <br>
+    <div id="trybe">
+        <p>
+            Atualmente sou estudante da <strong> <a class="link-trybe" href="https://www.betrybe.com/" target="_blank">trybe.</a></strong><br> Empresa que busca a excelência na formação de desenvolvedores de software. Além de trabalhar na Universidade pude desenvolver diversos
+            trabalhos nas áreas de: Computação gráfica Edição de vídeo Multimídia Criação de Identidade Visual para empresas
+        </p>
+    </div>
+    <br>
+    <div id="habilidades">
+        <p>
+            <h2>Habilidades e competências</h2>
+            - Trabalho em equipe<br> - Photoshop<br> - Premiere<br> - After Effects<br> - Illustrator<br> - Fotografia<br> - Produção gráfica<br> - Atualmente estou desenvolvendo habilidades e competências<br> relacionadas ao desenvolvimento de software
+            na TRYBE. De todas as habilidades e competências listadas acima,<br> a que mais me orgulho é a capacidade de trabalhar em equipe.
+        </p>
+    </div>
+</body>
 
 </html>
